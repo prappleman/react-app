@@ -1,0 +1,28 @@
+/* Image Section Styling */
+.image-section {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+}
+  
+.background-image {
+    width: 100%;  /* Full width of the container */
+    height: 100vh; /* You can adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+  
+.shows-container {
+    width: 80vw;
+    position: absolute;
+    top: 50%; /* Centers the shows container vertically */
+    left: 50%; /* Centers the shows container horizontally */
+    transform: translate(-50%, -50%); /* Centers it perfectly */
+    color: white; /* White text for contrast */
+    text-align: left; /* Centers the text */
+}
+  
+.shows-container h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    text-align: center;
+}
+  

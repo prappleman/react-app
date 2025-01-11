@@ -1,0 +1,64 @@
+/* Footer container */
+.footer {
+    background-color: #222; /* Dark background for footer */
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+/* About Us Section */
+#about-us {
+    background-color: rgba(255, 255, 255, 0.75); /* Light transparent background */
+    border-radius: 10px;
+    width: 90vw; /* Set the width to 90% of the viewport width */
+    margin: 20px auto; /* Center the section horizontally with a margin */
+    padding: 20px; /* Add some padding for spacing */
+    max-width: 900px; /* Limit the maximum width for large screens */
+}
+
+#about-us h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2rem; /* Set the font size for the heading */
+    margin-bottom: 20px; /* Space between the heading and paragraphs */
+}
+
+#about-us p {
+    text-align: left; /* Align the text to the left */
+    text-indent: 20px; /* Indent the first line of each paragraph */
+    margin-bottom: 15px; /* Space between paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+    font-size: 1rem; /* Set a comfortable font size for paragraphs */
+    padding: 0 10px; /* Optional: Add some horizontal padding to the text for better readability */
+}
+  
+  
+  /* Button for "Learn More" functionality */
+  #learn-more {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  /* Social Media Links Section */
+  .social-links {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+  

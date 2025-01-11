@@ -1,0 +1,78 @@
+/* Hero container to hold the video */
+.hero {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 85vh; /* Ensure it covers the full viewport height */
+  justify-content: center;
+}
+
+/* Video styling to cover the background */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: -15vw;
+  width: 130vw;  
+  height: 85vh;
+  object-fit: cover;    /* Ensures the video covers the area without distortion */
+  z-index: -1;          /* Keeps the video behind other content */
+}
+
+/* Hero button styling */
+.hero-button {
+  position: relative;
+  z-index: 2;               /* Ensure the button is above the video */
+  padding: 15px 30px;
+  font-size: 18px;
+  top: 400px;
+  background-color: transparent; /* Semi-transparent background for contrast */
+  border: 2px solid white;
+  border-radius: 0px;
+  cursor: pointer;
+  color: white;
+}
+
+.hero-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light white background on hover */
+  border-color: #fff; /* Ensure border stays white on hover */
+}
+
+.latest-album {
+  padding: 75px 0px 75px;
+}
+
+.album-cover {
+  max-width: 85vw;
+}
+  
+/* Mailing List Section */
+.mailing-list {
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.mailing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailing-form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.mailing-form button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
