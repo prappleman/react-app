@@ -1,16 +1,25 @@
-import React from 'react';
-import Nav from './components/Nav'; // Import Nav component
-import Footer from './components/Footer'; // Import Footer component
-import Home from './components/Home'; // Import Home component
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Merch from "./pages/Merch";
+import Shows from "./pages/Shows";
+import paperImage from './assets/paper.jpg';
 
-function App() {
+
+const App = () => {
   return (
     <div>
       <Nav />
-      <Home />  {/* Add your other components here */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/merch" element={<Merch />} />
+        <Route path="/shows" element={<Shows />} />
+      </Routes>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
